@@ -8,26 +8,13 @@
     <artifactId>springboot-trage-service</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+	<parent>
+       <groupId>nl.ordina.demo</groupId>
+       <artifactId>springboot-cloud-demo</artifactId>
+       <version>1.0-SNAPSHOT</version>
+    </parent>
 
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Brixton.SR7</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-dependencies</artifactId>
-                <version>1.5.1.RELEASE</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
+  
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -58,8 +45,4 @@
         </plugins>
 
     </build>
-    <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-    </properties>
 </project>
